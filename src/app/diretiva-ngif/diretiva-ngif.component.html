@@ -1,0 +1,8 @@
+<div *ngIf="cursos.length == 0">
+	Lista de cursos aqui
+</div>
+<div *ngIf="mostrarCursos">Existem cursos.</div>
+
+<div *ngElse="mostrarCursos">Nao existem cursos.</div>
+
+<button (click)="onMostrarCursos()">Change</button>
